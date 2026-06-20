@@ -54,24 +54,25 @@ body {
 
 .feed-selector {
     display: flex;
-    gap: 10px;
+    gap: 6px;
     margin-bottom: 32px;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Buttons auch zentrieren, optional */
+    justify-content: flex-start;
 }
 
 button {
-    padding: 8px 18px;
+    padding: 6px 14px;
     background: #1a1a2e;
     color: #c0c0d0;
     border: 1px solid #333;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 500;
     transition: all 0.2s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    white-space: nowrap; /* Verhindert Zeilenumbruch innerhalb der Buttons */
 }
 
 button:hover {
