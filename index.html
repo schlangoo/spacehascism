@@ -18,12 +18,13 @@
         </header>
         
         <div class="feed-selector">
+           <button onclick="loadOwnTexts(this)" id="own-texts-btn"><span class="red-star">★</span> Eigene Texte</button>
+        </div>
             <button onclick="loadFeed('coulthart', this)">Ross Coulthart</button>
             <button onclick="loadFeed('knapp', this)">George Knapp</button>
             <button onclick="loadFeed('elizondo', this)">Lue Elizondo</button>
             <button onclick="loadFeed('nolan', this)">Garry Nolan</button>
-            <button onclick="loadOwnTexts(this)" id="own-texts-btn"><span class="red-star">★</span> Eigene Texte</button>
-        </div>
+           
         
         <main id="feed-content">
             <!-- Hier werden die Feeds oder eigenen Texte geladen -->
