@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2024-05-21",
+    "title": "Willkommen bei space hascism",
+    "text": "Dies ist der erste eigene Eintrag auf dieser Seite.\nHier können Gedanken, Analysen und Kommentare zum Thema Haschismus und den Space-Feeds veröffentlicht werden.\n\nDie Texte werden aus dieser JSON-Datei geladen. Neue Einträge einfach oben hinzufügen."
+  },
+  {
+    "date": "2024-05-15",
+    "title": "Über die neue Seite",
+    "text": "Die Kommentarfunktion wurde entfernt. Stattdessen gibt es nun diesen Bereich für redaktionelle Texte.\nDie Aktualisierung erfolgt durch manuelles Bearbeiten der texte.json im GitHub-Repository."
+  }
+]
