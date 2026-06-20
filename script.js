@@ -2,7 +2,8 @@ const RSS_FEEDS = {
     coulthart: "https://nitter.net/rosscoulthart/rss",
     knapp: "https://nitter.net/g_knapp/rss",
     elizondo: "https://nitter.net/LueElizondo/rss",
-    nolan: "https://nitter.net/GarryPNolan/rss"
+    nolan: "https://nitter.net/GarryPNolan/rss",
+    loeb: "https://nitter.net/ProfAviLoeb/rss"
 };
 
 // Funktion zum sicheren Escapen von HTML (optional, aber sicherer)
