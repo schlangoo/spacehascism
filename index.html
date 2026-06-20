@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Hascism</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🛸</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div> <!-- Für einen kleinen Space-Effekt -->
+    <div class="container">
+        <header>
+            <h1>space hascism</h1>
+            <p class="greeting" id="greeting">Nachrichten aus den Weiten des Haschismus und eigene Texte der Redaktion.</p>
+        </header>
+        
+        <div class="feed-selector">
+            <button onclick="loadFeed('coulthart', this)">Ross Coulthart</button>
+            <button onclick="loadFeed('knapp', this)">George Knapp</button>
+            <button onclick="loadFeed('elizondo', this)">Lue Elizondo</button>
+            <button onclick="loadFeed('nolan', this)">Garry Nolan</button>
+            <button onclick="loadOwnTexts(this)" id="own-texts-btn"><span class="red-star">★</span> Eigene Texte</button>
+        </div>
+        
+        <main id="feed-content">
+            <!-- Hier werden die Feeds oder eigenen Texte geladen -->
+        </main>
+        
+        <footer>
+            <small>Daten von nitter.net | Eigene Texte aus texte.json</small>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
