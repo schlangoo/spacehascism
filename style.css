@@ -189,3 +189,33 @@ footer {
         padding: 15px;
     }
 }
+/* Header-Bild Container */
+.header-image-container {
+    width: 100%;
+    max-width: 800px; /* Gleiche Breite wie dein Content */
+    margin: 0 auto 24px auto;
+    border-radius: 8px;
+    overflow: hidden; /* Damit abgerundete Ecken auch auf das Bild wirken */
+    border: 1px solid #2a2a3e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header-image {
+    width: 100%;
+    height: auto; /* Behält das Seitenverhältnis bei */
+    display: block; /* Entfernt ungewollte Abstände unter dem Bild */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Leichter Hover-Effekt */
+.header-image-container:hover .header-image {
+    transform: scale(1.02);
+}
+
+/* Für mobile Geräte: Bild nimmt volle Breite ein */
+@media (max-width: 768px) {
+    .header-image-container {
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+}
