@@ -57,7 +57,7 @@ body {
     gap: 10px;
     margin-bottom: 32px;
     flex-wrap: wrap;
-    justify-content: center; /* Buttons auch zentrieren, optional */
+    justify-content: flex-start; /* Buttons auch zentrieren, optional */
 }
 
 button {
