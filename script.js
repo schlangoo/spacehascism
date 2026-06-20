@@ -168,13 +168,12 @@ async function loadOwnTexts(clickedButton) {
     }
 }
 
-// Startet mit dem ersten Feed
+// Startet direkt mit "Eigene Texte"
 document.addEventListener('DOMContentLoaded', () => {
-    const firstButton = document.querySelector('.feed-selector button:first-child');
-    if (firstButton) {
-        loadFeed('coulthart', firstButton);
+    const ownTextsButton = document.getElementById('own-texts-btn');
+    if (ownTextsButton) {
+        loadOwnTexts(ownTextsButton);
     } else {
-        // Fallback
         document.getElementById("feed-content").innerHTML = `<p class="no-articles">Bereit. Wähle einen Feed oder eigene Texte.</p>`;
     }
 });
