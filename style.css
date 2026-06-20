@@ -4,14 +4,13 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 24px;
-    background: #0a0a14; /* Dunkler Weltraum-Hintergrund */
+    background: #0a0a14;
     color: #e0e0e0;
     line-height: 1.6;
     position: relative;
     overflow-x: hidden;
 }
 
-/* Einfacher Sternenhimmel-Effekt (optional, kann entfernt werden) */
 .stars {
     position: fixed;
     top: 0;
@@ -28,25 +27,29 @@ body {
     z-index: 1;
 }
 
-h1 {
-    font-size: 2.4rem;
-    font-weight: 300;
-    margin: 0 0 8px 0;
-    letter-spacing: 2px;
-    color: #ffffff;
-    text-transform: lowercase;
-    border-bottom: 1px solid #333;
-    padding-bottom: 16px;
+/* ========== HEADER-BILD ========== */
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 16px;
 }
 
-.red-star {
-    color: #ff3860; /* Leuchtendes Rot */
-}
-
+/* ========== GRUSS-SPRUCH ZENTRIERT ========== */
 .greeting {
     color: #a0a0b0;
     font-size: 0.9rem;
+    text-align: center;
     margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #333;
+}
+
+.red-star {
+    color: #ff3860;
 }
 
 .feed-selector {
@@ -54,6 +57,7 @@ h1 {
     gap: 10px;
     margin-bottom: 32px;
     flex-wrap: wrap;
+    justify-content: center; /* Buttons auch zentrieren, optional */
 }
 
 button {
@@ -140,7 +144,7 @@ button.active .red-star {
 }
 
 .own-text-item h3 {
-    color: #ffb8c6; /* Helleres Rot für eigene Texte */
+    color: #ffb8c6;
 }
 
 .own-text-item .text-date {
@@ -173,11 +177,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        padding: 16px;
-    }
-    
-    h1 {
-        font-size: 1.8rem;
+        padding: 12px;
     }
     
     button {
@@ -188,34 +188,8 @@ footer {
     #feed-content {
         padding: 15px;
     }
-}
-/* Header-Bild Container */
-.header-image-container {
-    width: 100%;
-    max-width: 800px; /* Gleiche Breite wie dein Content */
-    margin: 0 auto 24px auto;
-    border-radius: 8px;
-    overflow: hidden; /* Damit abgerundete Ecken auch auf das Bild wirken */
-    border: 1px solid #2a2a3e;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.header-image {
-    width: 100%;
-    height: auto; /* Behält das Seitenverhältnis bei */
-    display: block; /* Entfernt ungewollte Abstände unter dem Bild */
-    transition: transform 0.3s ease;
-}
-
-/* Optional: Leichter Hover-Effekt */
-.header-image-container:hover .header-image {
-    transform: scale(1.02);
-}
-
-/* Für mobile Geräte: Bild nimmt volle Breite ein */
-@media (max-width: 768px) {
-    .header-image-container {
-        border-radius: 4px;
-        margin-bottom: 16px;
+    
+    .feed-selector {
+        gap: 6px;
     }
 }
